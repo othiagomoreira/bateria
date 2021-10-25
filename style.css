@@ -1,0 +1,85 @@
+/* ---Variables---*/
+:root {
+    --bg-color: linear-gradient(86deg ,#080D13, #AFB2AB);
+    --first-color: #181E20;
+    --color-active: #02314D;
+    --border-color: #045C94;
+
+    --title-font-sizee: 2.5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background: var(--bg-color);
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-title{
+    font-size: var(--title-font-sizee);
+    color: var(--first-color);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.grid-item {
+    text-align: center;
+    border: 2px solid ;
+    color: var(--color-active);
+    font-weight: bold;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.content-composition {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.input-composition{
+    padding: .5rem 1rem;
+    background: none;
+    border-radius: .25rem;
+    outline: none;
+    border: 2px solid var(--color-active);
+    color: #fff;
+}
+
+.input-composition::placeholder {
+    color: #fff;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.btn-composition {
+    padding: .5rem 1rem;
+    background-color: #045C94;
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px 0px #02314D;
+    font-size: 1rem;
+    color: #080D13;
+    transition: all ease .3s;
+}
+
+.btn-composition:hover {
+    box-shadow: none;
+}
+
